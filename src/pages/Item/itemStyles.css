@@ -1,0 +1,18 @@
+.itemContext{
+    display: flex;
+    margin: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.itemTextFieldContext{
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.textField{
+    margin-right: 3rem;
+    width: 45rem;
+}

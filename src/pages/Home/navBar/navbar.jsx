@@ -19,23 +19,16 @@ class NavigationBar extends Component{
         return(
             <Box sx={{ flexGrow: 1}}>
                 <AppBar position="static">
-                    <Toolbar>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2 }}
-                        >
-                            <MenuIcon />
-                        </IconButton>
+                    <Toolbar style={{backgroundColor:'#edbb91'}}>
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                            DashBoard
+                            <Link style={{textDecoration:"none",color:"inherit"}} to={'/'}><Button color="inherit">Dashboard</Button></Link>
                         </Typography>
-                        <Link to="login">
-                            <Button color="inherit">Item</Button>
-                        </Link>
-                        <Button color="inherit">Customer</Button>
+                        <Typography variant="h6" component="div" sx={{ flexGrow:1}}>
+                            <Link style={{textDecoration:"none",color:"inherit"}} to={'/item'}><Button color="inherit">Item</Button></Link>
+                        </Typography>
+                        <Typography variant="h6" component="div" sx={{ flexGrow:16}} >
+                            <Link style={{textDecoration:"none",color:"inherit"}} to={'/customer'}><Button color="inherit">Customer</Button></Link>
+                        </Typography>
                     </Toolbar>
                 </AppBar>
             </Box>
